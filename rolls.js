@@ -13,3 +13,21 @@ function searchProducts() {
         }
     });
 }
+
+window.addEventListener("scroll", function(){
+
+    const btn=document.getElementById("backToTop");
+
+    if(window.pageYOffset>300){
+
+        btn.classList.add("show");
+
+    }
+
+    else{
+
+        btn.classList.remove("show");
+
+    }
+
+});
